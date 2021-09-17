@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/background_color"
+    tools:context=".ControlActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/btn_reconnect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/connect_again"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/stop_car"
+            android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.5">
+
+            <ImageButton
+                android:id="@+id/btn_reverse"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/button_rounded"
+                android:src="@drawable/reverse_car"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/btn_acelerate"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/button_rounded"
+                android:scaleType="fitCenter"
+                android:src="@drawable/acelerate_car" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:id="@+id/btn_horn"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/horn"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/btn_light"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/light_off"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="top|right"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_joystick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/joystick_pt1" >
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
